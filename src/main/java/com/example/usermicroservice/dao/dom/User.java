@@ -9,7 +9,6 @@ public class User {
 
     private long userId;
     private String name;
-    private String emailId;
     private List<Contact> contacts;
 
     public long getUserId() {
@@ -26,14 +25,6 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getEmailId() {
-        return emailId;
-    }
-
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
     }
 
     public List<Contact> getContacts() {

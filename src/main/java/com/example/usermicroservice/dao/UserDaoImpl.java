@@ -21,7 +21,6 @@ public class UserDaoImpl implements UserDao {
         User user = new User();
         user.setUserId(1);
         user.setName("ajay");
-        user.setEmailId("ajay@gmail.com");
         this.users.add(user);
     }
 
@@ -37,7 +36,6 @@ public class UserDaoImpl implements UserDao {
         if (saveUser != null) {
             saveUser.setName(user.getName());
             saveUser.setContacts(user.getContacts());
-            saveUser.setEmailId(user.getEmailId());
             return saveUser;
         }
         return null;
